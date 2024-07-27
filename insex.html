@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Крестики-нолики</h1>
+
+    <!-- Экран начала игры -->
+    <div id="start-screen">
+        <div class="input-container">
+            <input type="text" id="player1" placeholder="Имя игрока 1">
+            <input type="text" id="player2" placeholder="Имя игрока 2">
+        </div>
+        <button id="start-button">Старт</button>
+    </div>
+
+    <!-- Экран игры -->
+    <div id="game-screen" class="hidden">
+        <div id="player-turn" class="player-turn"></div>
+        <div id="game-board" class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="game-over" class="game-over hidden"></div>
+        <div class="button-container">
+            <button id="play-again" class="hidden">Ещё игра</button>
+            <button id="end-game">Завершить игру</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
